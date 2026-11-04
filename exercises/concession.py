@@ -14,8 +14,10 @@ total = 0
 
 # Menu items
 print( 6 * "*" + " Menu " + 6 * "*")
+
 for key, value in menu.items():
     print(f"{key:10}: ${value:.2f}")
+
 print( 18 * "*" )
 
 # Running program
@@ -29,9 +31,11 @@ while True:
 
 # Cart / Order / Total
 print( 6 * "*" + " Your Order " + 6 * "*")
+
 for food in cart:
     total += menu.get(food)
     print(food.capitalize(), end=" ")
+
 print()
 print(f"Your total is: ${total:.2f}")
 print( 24 * "*" )
